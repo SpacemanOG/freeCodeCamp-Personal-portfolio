@@ -1,3 +1,11 @@
+:root {
+    --baby-powder: #FAF8F4;
+    --atomic-tangerine: #FD8E58;
+    --powder-blue: #ACE5E5;
+    --violet-crayola: #964880;
+    --raisin-black: #1A1B25;
+}
+
 html {
     /* GOT THE FOLLOWING FROM https: //css-tricks.com/box-sizing/ */
     -webkit-box-sizing: border-box;
@@ -14,4 +22,50 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
+}
+
+body {
+    background-color: var(--baby-powder);
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Poiret One', cursive;
+}
+
+/* THE NAV BAR SETTINGS */
+/* THE NAV BAR SETTINGS */
+nav {
+    width: 100vw;
+    /* height: 16vw; */
+    padding: 4vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--baby-powder);    
+}
+
+.navItemBox.left {
+    width: 24%;
+}
+
+.navItemBox.left img {
+    width: 80%;
+}
+
+.navItemBox.right ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2vw;
+}
+
+
+/* HERO SECTION */
+/* HERO SECTION */
+.heroSection img {
+    width: 100vw;
+    /* margin-top: 100px; */
 }
