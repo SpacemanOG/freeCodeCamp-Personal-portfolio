@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Poiret+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Patrick+Hand+SC&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>spaceman(webdev) project: freeCodeCamp Personal Portfolio</title>
@@ -16,7 +16,7 @@
 <body>
     <nav>
         <div class="navItemBox left">
-            <img src="./images/spaceman-logo-bg-white.png" alt="spaceman logo">
+            <img src="./images/spaceman-logo-bg-babyPowder.png" alt="spaceman logo">
         </div>
         <div class="navItemBox right">
             <ul>
@@ -28,13 +28,19 @@
     </nav>
 
     <header>
-        <section class="heroSection">
+        <!-- the id welcome-section is a project requirement -->
+        <section class="heroSection" id="welcome-section">
             <picture>
                 <!-- i need to create the desktop image and put the link below -->
                 <source media="(min-width:800px)" srcset="">
                 <source media="(min-width:300px)" srcset="./images/mobile-hero-image.png">
                 <img src="./images/mobile-hero-image.png" alt="Hero image showing spaceman's photo with the daughter">
             </picture>
+
+            <div class="heroText">
+                <h1>spaceman(webdev)</h1>
+                <p>Hi there. My name is Saad. If you are reading this, that means you have somehow ended up in this little project of mine. I am doing this as a part of the freeCodeCamp Responsive Web Design Certification program.</p>
+            </div>
         </section>
     </header>
 
