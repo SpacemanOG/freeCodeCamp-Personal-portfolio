@@ -1,0 +1,17 @@
+html {
+    /* GOT THE FOLLOWING FROM https: //css-tricks.com/box-sizing/ */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    /* GOT THE FOLLOWING FROM https: //css-tricks.com/box-sizing/ */
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
