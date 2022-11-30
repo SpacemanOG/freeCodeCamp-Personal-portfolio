@@ -28,12 +28,33 @@ body {
 }
 
 p {
-    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    margin-top: 4vw;
 }
 
-h1,
-h2 {
+h1 {
     font-family: 'Patrick Hand SC', cursive;
+    font-size: 12vw;
+    margin-top: 4vw;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 8vw;
+    line-height: 1.5;
+}
+
+.extraSidePadding-8vw {
+    padding: 0 8vw;
+}
+
+.full-width-background {
+    width: 100vw;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+    padding: 8vw;
 }
 
 /* THE NAV BAR SETTINGS */
@@ -81,12 +102,21 @@ header {
 }
 
 .heroText h1 {
-    font-size: 10vw;
     color: var(--powder-blue);
+    font-size: 8vw;
 }
 
 .heroText p {
-    margin-top: 2vw;
-    line-height: 1.5;
     color: var(--baby-powder);
+}
+
+/* SETTINGS FOR MY JOURNEY */
+/* SETTINGS FOR MY JOURNEY */
+.myJourney p:nth-child(2) {
+    margin-top: 0;
+}
+
+.myJourney h2:nth-child(5) {
+    background-color: var(--atomic-tangerine);
+    color: var(--raisin-black);
 }
