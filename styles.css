@@ -124,31 +124,36 @@ header {
 /* MY PROJECT SECTION */
 /* MY PROJECT SECTION */
 .myProjects {
-    margin-top: 4vw;
+    margin-top:8vw;
 }
 
 .projectCard {
     width: 100%;
     margin-top: 4vw;
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--violet-crayola);
     border-radius: 8px;
-    padding-bottom: 8vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .projectPlatformName {
-    /* background-color: rgb(0, 0, 0); */
     background-color: var(--raisin-black);
     color: var(--baby-powder);
+    font-weight: 700;
     width: fit-content;
     position: absolute;
-    top: 12%;
+    top: 40px;
     transform: translateY(-50%);
     left: -2.4%;
     border-radius: 100vmax;
     padding: 1vw 4vw;
-    z-index: 1;    
-    box-shadow: 0 -5px 0 -3px var(--atomic-tangerine), 0 5px 0 -3px var(--powder-blue);
+    z-index: 1;
+    box-shadow: 0 -6px 0 -3px var(--atomic-tangerine), 0 6px 0 -3px var(--powder-blue);
+}
+
+/* Added the .projectScreenshotContainer div above .projectScreenshot div to control the Grayscale and Blur effect from ::Before pseudo element */
+.projectScreenshotContainer {
+    position: relative;
 }
 
 .projectScreenshot::before {
@@ -157,10 +162,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.64);
-    border-radius: 8px;
-    /* backdrop-filter: blur(1px); */
+    bottom: 1.2%;
+    /* background-color: rgba(0, 0, 0, 0.64); */
+    border-radius: 8px 8px 0 0;
     backdrop-filter: grayscale(100) blur(1px);
 }
 
@@ -169,10 +173,49 @@ header {
     border-radius: 8px 8px 0 0;
 }
 
-.projectTitle {
-    margin-top: 2vw;
+/* Card footer */
+.cardFooter {
+    width: 100%;
+    height: 28vw;
+    padding: 0 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4vw;
+}
+
+.projectName {
     color: var(--baby-powder);
-    position: absolute;
-    bottom: 0;
-    padding: 2vw 4vw;
+}
+
+.githubContainer a,
+.liveSiteContainer a {
+    text-decoration: none;
+    color: var(--baby-powder);
+}
+
+.githubLinkBox,
+.liveSiteLinkBox {
+    width: 8vw;
+    min-width: 100px;
+    padding: 2vw 0;
+    background-color: rgba(255, 255, 255, .08);
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.githubLinkBox img,
+.liveSiteLinkBox img {
+    width: 50%;
+    filter: invert(100%) sepia(100%) saturate(28%) hue-rotate(107deg) brightness(107%) contrast(109%);
+}
+
+.githubLinkBox p,
+.liveSiteLinkBox p {
+    margin: 0;
+    font-size: 3.2vw;
+    color: var(--baby-powder);
 }
