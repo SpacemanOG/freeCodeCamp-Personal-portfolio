@@ -25,11 +25,10 @@ html {
 body {
     background-color: var(--baby-powder);
     padding: 4vw;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
-    /* font-family: 'Dosis', sans-serif; */
-    font-family: 'Lato', sans-serif;
     line-height: 2;
     margin-top: 4vw;
 }
@@ -54,7 +53,7 @@ h2 {
     width: 100vw;
     margin-inline-start: 50%;
     transform: translateX(-50%);
-    padding: 8vw;
+    padding: 16vw 8vw;
 }
 
 /* THE NAV BAR SETTINGS */
@@ -116,7 +115,64 @@ header {
     margin-top: 0;
 }
 
-.myJourney h2:nth-child(5) {
+.myJourney h2 {
     background-color: var(--atomic-tangerine);
     color: var(--baby-powder);
+}
+
+
+/* MY PROJECT SECTION */
+/* MY PROJECT SECTION */
+.myProjects {
+    margin-top: 4vw;
+}
+
+.projectCard {
+    width: 100%;
+    margin-top: 4vw;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding-bottom: 8vw;
+}
+
+.projectPlatformName {
+    /* background-color: rgb(0, 0, 0); */
+    background-color: var(--raisin-black);
+    color: var(--baby-powder);
+    width: fit-content;
+    position: absolute;
+    top: 12%;
+    transform: translateY(-50%);
+    left: -2.4%;
+    border-radius: 100vmax;
+    padding: 1vw 4vw;
+    z-index: 1;    
+    box-shadow: 0 -5px 0 -3px var(--atomic-tangerine), 0 5px 0 -3px var(--powder-blue);
+}
+
+.projectScreenshot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-radius: 8px;
+    /* backdrop-filter: blur(1px); */
+    backdrop-filter: grayscale(100) blur(1px);
+}
+
+.projectScreenshot img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.projectTitle {
+    margin-top: 2vw;
+    color: var(--baby-powder);
+    position: absolute;
+    bottom: 0;
+    padding: 2vw 4vw;
 }
