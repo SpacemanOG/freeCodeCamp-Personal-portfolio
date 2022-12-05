@@ -54,7 +54,7 @@ h2 {
     margin-inline-start: 50%;
     transform: translateX(-50%);
     padding: 16vw 8vw;
-    margin-top: 16vw;
+    /* margin-top: 16vw; */
 }
 
 /* THE NAV BAR SETTINGS */
@@ -112,28 +112,58 @@ header {
 
 /* SETTINGS FOR ABOUT ME */
 /* SETTINGS FOR ABOUT ME */
+.aboutMe {
+    position: relative;
+    margin-top: 8vw;
+}
+
 .aboutMe p:nth-child(2) {
     margin-top: 0;
 }
 
 .aboutMe h2 {
+    color: var(--raisin-black);
+    margin-top: 8vw;
+}
+
+.decoration.one {
+    width: 400px;
+    height: 400px;
     background-color: var(--atomic-tangerine);
-    color: var(--baby-powder);
+    opacity: 0.32;
+    position: absolute;
+    top: 4%;
+    left: -40%;
+    z-index: -1;
+    transform: rotate(16deg);
+
+}
+
+.decoration.two {
+    width: 400px;
+    height: 400px;
+    background-color: var(--atomic-tangerine);
+    position: absolute;
+    bottom: -8%;
+    right: -64%;
+    z-index: -1;
+    transform: rotate(16deg);
+    border-radius: 100vmax;
 }
 
 
 /* MY PROJECT SECTION */
 /* MY PROJECT SECTION */
 .myProjects h1 {
-    margin-top: 16vw;
+    margin-top: 24vw;
 }
 
 .projectCardContainer {
     width: 100%;
     background-color: var(--raisin-black);
-    padding-top: 16vw;
+    padding-top: 2vw;
     margin-top: 4vw;
-    border-radius: 16px;
+    border-radius: 8px;
     position: relative;
 }
 
@@ -143,7 +173,7 @@ header {
     font-weight: 700;
     width: fit-content;
     position: absolute;
-    top: 6%;
+    top: -12%;
     left: 6%;
     border-radius: 100vmax;
     padding: 2vw 4vw;
@@ -154,7 +184,7 @@ header {
     color: var(--baby-powder);
     margin: 0;
     line-height: 1;
-    font-size: 2.4vw;
+    font-size: 3.2vw;
 }
 
 .projectScreenshot {
@@ -162,9 +192,10 @@ header {
 }
 
 .projectScreenshot img {
-    width: 88%;
+    width: 96%;
     display: block;
     margin: 0 auto;
+    border-radius: 4px 4px 0 0;
 }
 
 .projectScreenshot h2 {
@@ -174,12 +205,11 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-left: 8%;
-    padding-bottom: 4%;
-    padding-top: 2vw;
+    padding-left: 4vw;
     margin: 0;
-    background-color: rgba(26, 27, 37, 0.88);
+    background-color: rgba(26, 27, 37, 0.8);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .cardBottom {
