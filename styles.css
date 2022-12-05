@@ -160,17 +160,19 @@ header {
 }
 
 .myProjects h3 {
+    margin-top: 16vw;
+    color: var(--gray-web);
+}
+
+.myProjects h3:nth-child(2) {
     margin-top: 4vw;
-    background-color: var(--raisin-black);
-    color: var(--powder-blue);
-    display: inline-block;
 }
 
 .projectCardContainer {
     width: 100%;
     background-color: var(--raisin-black);
     padding-top: 8px;
-    margin-top: 4vw;
+    margin-top: 2vw;
     border-radius: 8px;
     position: relative;
 }
