@@ -116,6 +116,7 @@ header {
 .aboutMe {
     position: relative;
     margin-top: 8vw;
+    overflow: hidden;
 }
 
 .aboutMe p:nth-child(2) {
@@ -165,7 +166,7 @@ header {
 }
 
 .myProjects h3:nth-child(2) {
-    margin-top: 4vw;
+    margin-top: 2vw;
 }
 
 .projectCardContainer {
