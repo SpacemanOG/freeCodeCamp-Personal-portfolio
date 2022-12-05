@@ -27,6 +27,7 @@ body {
     background-color: var(--baby-powder);
     padding: 4vw;
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
 p {
@@ -116,7 +117,6 @@ header {
 .aboutMe {
     position: relative;
     margin-top: 8vw;
-    overflow: hidden;
 }
 
 .aboutMe p:nth-child(2) {
