@@ -213,12 +213,16 @@ header {
     width: 24vw;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .siteResponsivenessIcons img {
     height: 5.6vw;
     filter: invert(82%) sepia(2%) saturate(1341%) hue-rotate(324deg) brightness(122%) contrast(96%);
+}
+
+#dimIcon {
+    filter: invert(23%) sepia(5%) saturate(196%) hue-rotate(349deg) brightness(92%) contrast(85%);
 }
 
 .cardBottom {
