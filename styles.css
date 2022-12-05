@@ -262,3 +262,20 @@ header {
     font-size: 3.2vw;
     text-align: center;
 }
+
+
+/* FOOTER SECTION */
+/* FOOTER SECTION */
+footer {
+    margin-top: 16vw;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact ul li img {
+    width: 16vw;
+}
