@@ -4,6 +4,7 @@
     --powder-blue: #ACE5E5;
     --violet-crayola: #964880;
     --raisin-black: #1A1B25;
+    --gray-web: #807E7D;
 }
 
 html {
@@ -158,33 +159,20 @@ header {
     margin-top: 24vw;
 }
 
+.myProjects h3 {
+    margin-top: 4vw;
+    background-color: var(--raisin-black);
+    color: var(--powder-blue);
+    display: inline-block;
+}
+
 .projectCardContainer {
     width: 100%;
     background-color: var(--raisin-black);
-    padding-top: 2vw;
+    padding-top: 8px;
     margin-top: 4vw;
     border-radius: 8px;
     position: relative;
-}
-
-.clientInfo {
-    background-color: var(--raisin-black);
-    color: var(--baby-powder);
-    font-weight: 700;
-    width: fit-content;
-    position: absolute;
-    top: -12%;
-    left: 6%;
-    border-radius: 100vmax;
-    padding: 2vw 4vw;
-    box-shadow: 0 -6px 0 -3px var(--atomic-tangerine), 0 6px 0 -3px var(--powder-blue);
-}
-
-.clientInfo p {
-    color: var(--baby-powder);
-    margin: 0;
-    line-height: 1;
-    font-size: 3.2vw;
 }
 
 .projectScreenshot {
@@ -198,24 +186,43 @@ header {
     border-radius: 4px 4px 0 0;
 }
 
-.projectScreenshot h2 {
-    color: var(--baby-powder);
-    text-shadow: 0 0 8px rgb(0, 0, 0);
+.projectTitleBox {
     width: 100%;
+    padding: 2vw 4vw;
+    background-color: rgba(26, 27, 37, 0.88);
+    /* backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-left: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.projectScreenshot h2 {
+    color: var(--powder-blue);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
     margin: 0;
-    background-color: rgba(26, 27, 37, 0.8);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+}
+
+.siteResponsivenessIcons {
+    width: 24vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+}
+
+.siteResponsivenessIcons img {
+    height: 5.6vw;
+    filter: invert(82%) sepia(2%) saturate(1341%) hue-rotate(324deg) brightness(122%) contrast(96%);
 }
 
 .cardBottom {
     display: flex;
     justify-content: space-evenly;
-    padding: 4vw;
+    padding: 2vw;
 }
 
 /* .projectCardButton * {
@@ -238,12 +245,12 @@ header {
 }
 
 .buttonComponents img {
-    width: 24%;
-    filter: invert(100%) sepia(100%) saturate(28%) hue-rotate(107deg) brightness(107%) contrast(109%);
+    width: 16%;
+    filter: invert(51%) sepia(5%) saturate(134%) hue-rotate(335deg) brightness(95%) contrast(90%);
 }
 
 .buttonComponents p {
-    color: var(--baby-powder);
+    color: var(--gray-web);
     margin: 0;
     font-size: 3.2vw;
     text-align: center;
