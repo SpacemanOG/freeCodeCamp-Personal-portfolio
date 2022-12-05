@@ -24,11 +24,9 @@ html {
 }
 
 body {
-    width: 100vw;
     background-color: var(--baby-powder);
-    padding: 4vw;
+    /* padding: 4vw; */
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
 }
 
 p {
@@ -87,6 +85,7 @@ nav {
 /* HERO SECTION */
 /* HERO SECTION */
 header {
+    padding: 0 4vw;
     display: flex;
     justify-content: center;
 }
@@ -115,6 +114,12 @@ header {
 
 /* SETTINGS FOR ABOUT ME */
 /* SETTINGS FOR ABOUT ME */
+main {
+    width: 100vw;
+    padding: 0 4vw;
+    overflow-x: hidden;
+}
+
 .aboutMe {
     position: relative;
     margin-top: 8vw;
@@ -269,6 +274,7 @@ header {
 /* FOOTER SECTION */
 footer {
     margin-top: 16vw;
+    padding: 0 4vw 8vw 4vw;
 }
 
 .contact ul {
