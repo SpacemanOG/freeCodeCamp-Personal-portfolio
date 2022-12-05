@@ -24,6 +24,7 @@ html {
 }
 
 body {
+    width: 100vw;
     background-color: var(--baby-powder);
     padding: 4vw;
     font-family: 'Lato', sans-serif;
